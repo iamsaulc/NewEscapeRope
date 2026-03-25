@@ -1,0 +1,15 @@
+{
+  "Name": "New Escape Rope",
+  "Author": "IamSaulC",
+  "Version": "1.0.0",
+  "Description": "Adds an Escape Rope and a Floor Rope sold by the Dwarf. Item data and shop entries are managed by the companion Content Patcher pack.",
+  "UniqueID": "IamSaulC.NewEscapeRope",
+  "EntryDll": "NewEscapeRope.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "IsRequired": true
+    }
+  ]
+}

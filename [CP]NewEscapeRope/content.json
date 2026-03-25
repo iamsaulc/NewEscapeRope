@@ -1,0 +1,84 @@
+{
+  "Format": "2.9.0",
+  "Changes": [
+
+    // Escape Rope — iridium-colored rope that warps you to the dungeon entrance.
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "NewEscapeRope.EscapeRope": {
+          "Name": "Escape Rope",
+          "DisplayName": "{{i18n: escape-rope.name}}",
+          "Description": "{{i18n: escape-rope.description}}",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 1250,
+          "Texture": "Mods/NewEscapeRope/Objects",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ContextTags": [
+                  "not_placeable",
+                  "totem_item"
+          ]
+        }
+      }
+    },
+
+    // Floor Rope — gold-colored rope that takes you up one floor.
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "NewEscapeRope.FloorRope": {
+          "Name": "Floor Rope",
+          "DisplayName": "{{i18n: floor-rope.name}}",
+          "Description": "{{i18n: floor-rope.description}}",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods/NewEscapeRope/Objects",
+          "SpriteIndex": 1,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ContextTags": [
+                  "not_placeable",
+                  "totem_item"
+          ]
+        }
+      }
+    },
+
+    // Single 32x16 sprite sheet: index 0 (left) = Escape Rope, index 1 (right) = Floor Rope.
+    {
+      "Action": "Load",
+      "Target": "Mods/NewEscapeRope/Objects",
+      "FromFile": "assets/objects.png"
+    },
+
+    // Both ropes show up in the Dwarf's shop. Edit the Price fields here to adjust costs.
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Dwarf", "Items" ],
+      "Entries": {
+        "NewEscapeRope.EscapeRope": {
+          "Id": "NewEscapeRope.EscapeRope",
+          "ItemId": "(O)NewEscapeRope.EscapeRope",
+          "Price": 2500,
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Player"
+        },
+        "NewEscapeRope.FloorRope": {
+          "Id": "NewEscapeRope.FloorRope",
+          "ItemId": "(O)NewEscapeRope.FloorRope",
+          "Price": 1000,
+          "AvailableStock": 5,
+          "AvailableStockLimit": "Player"
+        }
+      }
+    }
+
+  ]
+}

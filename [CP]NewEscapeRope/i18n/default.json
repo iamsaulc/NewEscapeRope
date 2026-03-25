@@ -1,0 +1,7 @@
+{
+  "escape-rope.name": "Escape Rope",
+  "escape-rope.description": "An iridium rope that warps you back to the entrance of whichever dungeon you're in.",
+
+  "floor-rope.name": "Floor Rope",
+  "floor-rope.description": "A gold rope that pulls you up one floor. Won't do anything if you're already at the top."
+}

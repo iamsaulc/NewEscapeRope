@@ -1,0 +1,16 @@
+{
+  "Name": "New Escape Rope Content",
+  "Author": "IamSaulC",
+  "Version": "1.0.0",
+  "Description": "Content Patcher pack for New Escape Rope. Handles item data, sprites and shop entries.",
+  "UniqueID": "IamSaulC.NewEscapeRopeContent",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "IamSaulC.NewEscapeRope",
+      "IsRequired": true
+    }
+  ]
+}
